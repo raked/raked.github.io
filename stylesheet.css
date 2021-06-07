@@ -53,6 +53,111 @@ p {
   padding: 10px;
   color: #6457c9;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.navlinks:hover {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 300px) {
+  #navbar {
+    display: block;
+    padding: 15px;
+    width: 100%;
+    top: 0;
+    padding-left: 150px;
+  }
+}
+
+@media (min-width: 400px) {
+  #navbar {
+    display: block;
+    width: 100%;
+    top: 0;
+    padding-left: 150px;
+  }
+}
+
+@media (min-width: 450px) {
+  #navbar {
+    display: block;
+    width: 100%;
+    top: 0;
+    padding-left: 200px;
+  }
+}
+
+@media (min-width: 500px) {
+  #navbar {
+    display: block;
+    width: 100%;
+    top: 0;
+    padding-left: 250px;
+  }
+}
+
+@media (min-width: 600px) {
+  #navbar {
+    display: block;
+    width: 100%;
+    top: 0;
+    padding-left: 350px;
+  }
+}
+
+@media (min-width: 800px) {
+  #navbar {
+    display: block;
+    width: 100%;
+    top: 0;
+    padding-left: 550px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #navbar {
+    display: block;
+    width: 100%;
+    top: 0;
+    padding-left: 750px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #navbar {
+    display: block;
+    width: 100%;
+    top: 0;
+    padding-left: 950px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #navbar {
+    display: block;
+    width: 100%;
+    top: 0;
+    padding-left: 1150px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #navbar {
+    display: block;
+    width: 100%;
+    top: 0;
+    padding-left: 1350px;
+  }
+}
+
+@media (min-width: 1800px) {
+  #navbar {
+    display: block;
+    width: 100%;
+    top: 0;
+    padding-left: 1550px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -66,15 +171,13 @@ p {
   }
 }
 
-@media (max-width: 799px) {
-  #navbar {
-    display: block;
-    width: 100%;
-    top: 0;
-  }
-}
-
 #githubicon {
   height: 50px;
   width: auto;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+#githubicon:hover {
+  transform: scale(1.25);
 }
