@@ -62,7 +62,7 @@ p {
   top: 0;
 }
 }
-@media (max-width: 414px){
+@media (max-width: 799px){
 #navbar {
   background-color: #f55651
 }
