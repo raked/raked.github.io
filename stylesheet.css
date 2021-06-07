@@ -66,3 +66,11 @@ p {
   top: 0;
 }
 }
+
+@media (max-width: 799px){
+#navbar {
+  display: block;
+  width: 100%;
+  top: 0;
+}
+}
