@@ -31,6 +31,10 @@
   color: #e7f551;
 }
 
+#navbar {
+  background-color: #f55651
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -60,10 +64,5 @@ p {
   padding: 15px;
   padding-left: 1600px;
   top: 0;
-}
-}
-@media (max-width: 799px){
-#navbar {
-  background-color: #f55651
 }
 }
