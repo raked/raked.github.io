@@ -25,6 +25,26 @@
   border-radius: 1px;
 }
 
+/* unvisited link */
+#navbar a:link {
+  color: #000;
+}
+
+/* visited link */
+#navbar a:visited {
+  color: #000;
+}
+
+/* mouse over link */
+#navbar a:hover {
+  color: var(--accentColor);
+}
+
+/* selected link */
+#navbar a:active {
+  color: #000;
+}
+
 #navbar ul {
   list-style-type: none;
   margin: 0;
@@ -57,6 +77,12 @@
   border-radius: 20px;
 }
 
+#projects img:hover {
+  -moz-box-shadow: inset 0px 0px 40px 5px var(--accentColor);
+  -webkit-box-shadow: inset 0px 0px 40px 5px var(--accentColor);
+  box-shadow: inset 0px 0px 40px 5px var(--accentColor);
+}
+
 #projects a {
   text-decoration: none;
 }
@@ -79,6 +105,18 @@
 /* selected link */
 #projects a:active {
   color: #000;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: var(--secondaryColor);
+}
+
+#contact a:active {
+  transform: scale(0.9);
 }
 
 .navlinks {
