@@ -2,4 +2,4 @@
 
 Personal Portfolio Page for raked
 
-Pallet permalink:
+Pallet permalink: https://colourco.de/analogic-complement/5/92dbbf
