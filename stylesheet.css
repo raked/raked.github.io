@@ -1,3 +1,9 @@
+:root {
+  --mainColor: #90b3da;
+  --secondaryColor: #9395dc;
+  --accentColor: #be6f8d;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +12,7 @@
 #navwrapper {
   display: flex;
   justify-content: center;
+  background-color: var(--mainColor);
 }
 
 #navbar {
@@ -13,6 +20,8 @@
   justify-content: space-around;
   width: 20%;
   padding: 15px;
+  border-bottom: 1px solid var(--accentColor);
+  border-radius: 1px;
 }
 
 #navbar ul {
@@ -27,14 +36,23 @@
   justify-content: center;
   align-items: center;
   min-height: 93vh;
-  background-color: ;
+  background-color: var(--mainColor);
 }
 
 #projects {
+  line-height: 2;
+  padding: 10px;
+  background-color: var(--secondaryColor);
 }
 
 #projects img {
-  width: 50%;
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#projects a {
+  text-decoration: none;
 }
 
 .navlinks {
@@ -56,6 +74,12 @@
 }
 .project3 {
   grid-area: project3;
+}
+
+.projcaption {
+  text-align: center;
+  background-color: var(--accentColor);
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 800px) {
