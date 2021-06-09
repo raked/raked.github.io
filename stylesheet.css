@@ -42,7 +42,7 @@
 
 /* selected link */
 #navbar a:active {
-  color: #000;
+  color: var(--accentColor);
 }
 
 #navbar ul {
@@ -155,6 +155,16 @@
 @media screen and (max-width: 512px) {
   #projects h3 {
     font-size: 150%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3";
   }
 }
 
