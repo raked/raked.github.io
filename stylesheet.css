@@ -132,6 +132,15 @@ p {
     top: 0;
     padding-left: 950px;
   }
+  #welcome {
+    width: 100%;
+  }
+  #projects {
+    width: 100%;
+  }
+  #contact {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1400px) {
