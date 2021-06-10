@@ -159,6 +159,7 @@
 
   #projects h3 {
     font-size: 150%;
+    padding: 0px;
   }
   .container {
     display: grid;
