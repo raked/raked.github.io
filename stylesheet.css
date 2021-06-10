@@ -153,6 +153,10 @@
 }
 
 @media screen and (max-width: 512px) {
+  #projects {
+    text-align: center;
+  }
+
   #projects h3 {
     font-size: 150%;
   }
@@ -186,6 +190,12 @@
   }
 
   #projects h3 {
-    font-size: 50%;
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  #projects h3 {
+    font-size: 80%;
   }
 }
