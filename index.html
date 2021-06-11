@@ -1,65 +1,129 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
     />
+
     <title>raked</title>
   </head>
-  <div id="navwrapper">
-    <nav id="navbar">
-      <a href="#about" class="navlinks">About</a>
-      <a href="#projects" class="navlinks">Projects</a>
-      <a href="#contact" class="navlinks">Contact</a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#about" class="navbar-brand d-none d-lg-block">raked</a>
+          </li>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </div>
+        </ul>
+      </div>
     </nav>
-  </div>
+  </header>
   <body>
-    <div id="about">
-      <h2>Hi I'm raked</h2>
-      <p>a web developer</p>
-    </div>
-    <div id="projects">
-      <h3>Here are some of my recent projects</h3>
+    <div class="bg-light">
       <div class="container">
-        <div class="project1">
-          <a href="https://codepen.io/raked-the-encoder/full/mdWpZNq"
-            ><figure>
-              <img src="assets/project1.PNG" />
-              <figcaption class="projcaption">
-                FCC: Technical Documentation Page
-              </figcaption>
-            </figure></a
-          >
-        </div>
-        <div class="project2">
-          <a href="https://codepen.io/raked-the-encoder/full/YzZYrxo"
-            ><figure>
-              <img src="assets/project2.PNG" />
-              <figcaption class="projcaption">
-                FCC: Product Landing Page
-              </figcaption>
-            </figure></a
-          >
-        </div>
-        <div class="project3">
-          <a href="https://codepen.io/raked-the-encoder/full/rNyYrjX"
-            ><figure>
-              <img src="assets/project3.PNG" />
-              <figcaption class="projcaption">FCC: Survey Form</figcaption>
-            </figure></a
-          >
-        </div>
+        <section
+          id="about"
+          class="d-flex flex-column justify-content-center align-items-center text-center p-5 min-vh-100"
+        >
+          <h1 class="display-5 fw-bold">Hi I'm raked</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+              A web developer well versed in HTML5, CSS3, JavaScript & more.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <a href="#projects">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+                  Projects
+                </button>
+              </a>
+              <a href="#contact">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg px-4"
+                >
+                  Contact
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="projects">
+          <h2>Here are some of my recent projects</h2>
+          <div class="container d-flex flex-column flex-md-row">
+            <div class="text-center p-3">
+              <a
+                href="https://codepen.io/raked-the-encoder/full/mdWpZNq"
+                class="link-secondary"
+                ><figure>
+                  <img src="assets/project1.PNG" class="img-fluid rounded" />
+                  <figcaption>
+                    FCC: Technical Documentation Page
+                  </figcaption>
+                </figure></a
+              >
+            </div>
+            <div class="text-center p-3">
+              <a
+                href="https://codepen.io/raked-the-encoder/full/YzZYrxo"
+                class="link-secondary"
+                ><figure>
+                  <img src="assets/project2.PNG" class="img-fluid rounded" />
+                  <figcaption>
+                    FCC: Product Landing Page
+                  </figcaption>
+                </figure></a
+              >
+            </div>
+            <div class="text-center p-3">
+              <a
+                href="https://codepen.io/raked-the-encoder/full/rNyYrjX"
+                class="link-secondary"
+                ><figure>
+                  <img src="assets/project3.PNG" class="img-fluid rounded" />
+                  <figcaption>FCC: Survey Form</figcaption>
+                </figure></a
+              >
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container text-center p-3">
+            <a href="https://www.github.com/raked" target="_blank">
+              <img src="assets/githubicon.png" />
+            </a>
+          </div>
+        </section>
       </div>
     </div>
-    <div id="contact">
-      <a href="https://www.github.com/raked" target="_blank"
-        ><img src="assets/githubicon.png" id="githubicon" alt="GitHub icon"
-      /></a>
-    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
