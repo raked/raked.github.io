@@ -16,11 +16,11 @@
     <title>raked</title>
   </head>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
       <div class="container-fluid">
         <ul class="nav navbar-nav">
           <li>
-            <a href="#" class="navbar-brand d-none d-lg-block">raked</a>
+            <a href="#about" class="navbar-brand d-none d-lg-block">raked</a>
           </li>
           <button
             class="navbar-toggler"
@@ -42,9 +42,34 @@
     </nav>
   </header>
   <body>
-    <div class="container">
-      <section id="projects"></section>
-      <section id="contact"></section>
+    <div class="bg-light">
+      <div class="container">
+        <section id="about" class="text-center p-5">
+          <h1 class="display-5 fw-bold">Hi I'm raked</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+              A web developer well versed in HTML5, CSS3, JavaScript & more.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <a href="#projects">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+                  Projects
+                </button>
+              </a>
+              <a href="#contact">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg px-4"
+                >
+                  Contact
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="projects"></section>
+        <section id="contact"></section>
+      </div>
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
